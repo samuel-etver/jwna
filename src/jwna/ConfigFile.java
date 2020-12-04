@@ -26,10 +26,10 @@ public class ConfigFile {
     final String valueStr = read(key, null);
     boolean value = defValue;
     
-    if (valueStr.equalsIgnoreCase("true")) {
-      value = true;
+    if ("true".equalsIgnoreCase(valueStr)) {
+        value = true;
     }
-    else if (valueStr.equalsIgnoreCase("false")) {
+    else if ("false".equalsIgnoreCase(valueStr)) {
       value = false;
     }
     
